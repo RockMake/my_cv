@@ -1,0 +1,208 @@
+
+/* estilos generales  */
+body{
+    background-color: #ccc;
+}
+section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+h1 {
+    font-family: 'Anonymous Pro', monospace;
+    font-family: 'Kanit', sans-serif;
+    font-family: 'Noto Serif', serif;
+    font-family: 'Roboto Slab', serif;
+    font-family: 'Saira Extra Condensed', sans-serif;
+}
+p {
+    font-family: 'Anonymous Pro', monospace;
+}
+
+/* estilos de la barra de navegacion */
+.navbar {
+    padding: 1rem;
+}
+
+.navbar-collapse {
+    align-items: center;
+    justify-content: space-between;
+
+}
+
+
+/* seccion de inicio */
+.inicio {
+    min-height: 450px;
+    text-align: center;
+    padding-bottom: 10%;
+}
+
+.inicio-principal {
+    padding: 3rem;
+}
+
+.skill{
+    text-align: center;
+}
+
+.cuadro1 {
+    background-color: rgba(157, 178, 191, 0.37);
+}
+
+.Cuadro2{
+    background-color: rgba(159, 179, 191, 0.31);
+    margin-left: 7%;
+    margin-top: 2%;
+}
+
+
+
+.perfil {
+    width: 100%;
+    height: 250px;
+    margin-bottom: 20%;    
+}
+
+#f_perfil {
+    width: auto;
+    height: 100%;
+    border-radius: 30%;
+    margin-top: 15%;
+
+}
+.columna1 {
+    text-align: center;
+    justify-content: center;
+}
+
+.columna2 {
+   text-align: center;
+   justify-content: center; 
+}
+
+.tex_descripcion {
+    margin: 5%;
+    font-size: 1.5rem;
+}
+
+.descargar_cv {
+    margin: 2%;
+    font-size: 1.5rem;
+}
+
+.btn {
+    background: rgba(33, 37, 41, 0.366);
+    cursor: pointer;
+    border: none;
+    padding: 16px 32px;
+    color: azure;
+    font-size: 24px;
+    font-weight: bold;
+    position: relative;
+}
+
+.btn:hover::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(45deg, rgb(187, 186, 186), rgb(165, 202, 220), rgb(84, 104, 111), rgb(23, 62, 69), rgb(165, 202, 220), rgb(23, 62, 69), rgb(84, 104, 111), rgb(23, 62, 69));
+    background-size: 800%;
+    filter: blur(10px);
+    animation: glowing 20s linear infinite;
+}
+
+@keyframes glowing {
+    0% {
+        background-position: 0 0;
+    }
+    50% {
+        background-position: 400% 0;
+    }
+    100% {
+        background-position: 0 0;
+    }
+}
+
+/* division */
+.linea {
+    width: 100%;
+    height: 2px;
+    background-color: #fafafa6f; 
+    animation: expand 3s forwards;
+}
+
+
+/* seccion de habilidades */
+.skills {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    opacity: 0;
+}
+
+.skill {
+    text-align: center;
+    flex: 1;
+    transform: translateY(20px);
+    transition: transform 0.5s ease;
+}
+
+.skill i {
+    font-size: 48px;
+    margin-bottom: 10px;
+}
+
+.skills.show {
+    opacity: 1;
+}
+
+.skills.show .skill {
+    transform: translateY(0);
+}
+
+/* seccion de proyectos */
+.proyectos {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.proyecto {
+    width: 300px;
+    margin: 20px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    text-align: center;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.proyecto img {
+    max-width: 100%;
+    height: auto;
+}
+
+
+
+
+@media screen and (max-width: 767px) {
+    .perfil {
+        display: none;
+    }
+}
+
+@keyframes expand {
+    from {
+        width: 0;
+    }
+    to {
+        width: 100%;
+    }
+}

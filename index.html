@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mi Portafolio</title>
+    
+    <!-- link boostrap  -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/background.css">
+
+</head>
+<body>
+    <!-- background -->
+    <ul class="container-fluid circles">
+      <li></li>
+      <li></li>
+      <li></li>
+      <li></li>
+      <li></li>
+      <li></li>
+      <li></li>
+      <li></li>
+      <li></li>
+      <li></li>
+    </ul>
+    <!-- navbar -->
+    <nav class="navbar navbar-expand-md navbar-light">
+        <div class="container-fluid">
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbar-toggler"
+            aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbar-toggler">
+            <a class="navbar-brand" title="queso" href="#">
+              <i class="bi bi-braces"></i>
+            </a>
+            <ul class="navbar-nav d-flex justify-content-center align-items-center">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#">Mi perfil</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Proyectos</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">skil</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Contacto</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+    </nav>
+    <!-- inicio -->
+    <section class="inicio">
+            <div class="container-fluid inicio-principal ">
+              <div class="container-md cuadro1 text-center">
+                <br>
+                <div class="container-lg Cuadro2 text-center">
+                  <div class="row fila1">
+                    <div class="col-xl-6 columna1">
+                      <div class="container-fluid perfil text-center">
+                        <img id="f_perfil" src="img/perfil.png" alt="imagen de perfil">
+                      </div>
+                    </div>
+                    <div class="col-xl-6 columna2 ">
+                      <div class="tex_descripcion">
+                        <h1>Hola, soy Duban Ramirez Vasquez</h1>
+                        <p>Desarrollador Frontend: Diseñando Experiencias Visuales.</p>
+                      </div>
+                      <div  class="descargar_cv">
+                        <a class="btn" role="button" href="#about">Descargar CV</a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+             <!-- skill -->
+            <div class="container-fluid skills">
+                <div class="row">
+                    <h2 id="skill">skill</h2>
+                    <div class="col skill">
+                        <i class="fas fa-code"></i>
+                        <p>Desarrollo Web</p>
+                        <div class="icons">
+                            <i class="fab fa-html5"></i>
+                            <i class="fab fa-css3"></i>
+                            <i class="fab fa-js"></i>
+                            <i class="fab fa-bootstrap"></i>
+                        </div>
+                    </div>
+                    
+                    <div class="col skill">
+                        <i class="fas fa-chart-bar"></i>
+                        <p>Análisis de Datos</p>
+                        <div class="icons">
+                            <i class="fab fa-python"></i>
+                            <i class="fab fa-r-project"></i>
+                        </div>
+                    </div>
+                    <script src="js/index.js"></script>
+                </div>
+            </div>
+             
+    </section>
+
+    <div class="linea"></div>
+
+    <section class="proyectos">
+      <div class="container">
+        <div class="row">
+          <div class="col-xl-6 proyecto">
+              <img src="img/p1.png" alt="Proyecto 1">
+              <h3>Proyecto 1</h3>
+              <p>Descripción del Proyecto 1.</p>
+          </div>
+          <div class="col-xl-6 proyecto">
+              <img src="proyecto2.jpg" alt="Proyecto 2">
+              <h3>Proyecto 2</h3>
+              <p>Descripción del Proyecto 2.</p>
+          </div>
+          <div class="col-xl-6 proyecto">
+              <img src="proyecto2.jpg" alt="Proyecto 2">
+              <h3>Proyecto 2</h3>
+              <p>Descripción del Proyecto 2.</p>
+          </div>
+          <div class="col-xl-6 proyecto">
+              <img src="proyecto2.jpg" alt="Proyecto 2">
+              <h3>Proyecto 2</h3>
+              <p>Descripción del Proyecto 2.</p>
+          </div>
+          <div class="col-xl-6 proyecto">
+              <img src="proyecto2.jpg" alt="Proyecto 2">
+              <h3>Proyecto 2</h3>
+              <p>Descripción del Proyecto 2.</p>
+          </div>
+        </div>
+      </div>
+      
+    </section>
+
+    <div class="linea"></div>
+
+    <section id="contacto">
+        <h2>Contacto</h2>
+        <p>Puedes contactarme en [tu correo electrónico].</p>
+    </section>
+
+    <div class="linea"></div>
+    
+    <footer>
+        <p>&copy; 2023 Mi Portafolio</p>
+    </footer>
+    
+   
+
+    
+    
+</body>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+</html>
